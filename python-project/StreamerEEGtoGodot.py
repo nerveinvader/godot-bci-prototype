@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 """
 EEG to WebSocket Streamer (server)
 --------------------------------
