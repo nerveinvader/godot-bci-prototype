@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bhp7segrnixc2"]
+
+[ext_resource type="Script" uid="uid://b1mo5n3dvp88o" path="res://WebSocketVisualizer.gd" id="1_vw6t8"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_03604"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_vw6t8")
+
+[node name="Cube" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_03604")
