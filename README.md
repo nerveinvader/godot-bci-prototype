@@ -14,4 +14,4 @@ Godot Integration With BCI (Prototype WIP)
 # Demo:
 <img src="./godot_bci_mvp_demo.gif">
 
-This demo project is publicly available
+This demo project is publicly available under MIT license.
