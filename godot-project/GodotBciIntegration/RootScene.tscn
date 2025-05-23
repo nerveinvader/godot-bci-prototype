@@ -9,3 +9,6 @@ script = ExtResource("1_vw6t8")
 
 [node name="Cube" type="MeshInstance3D" parent="."]
 mesh = SubResource("BoxMesh_03604")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.834165, 0.551515, 0, -0.551515, 0.834165, 0, 1.15806, 2.44096)
