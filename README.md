@@ -1,5 +1,6 @@
 # godot-bci-prototype
 Godot Integration With BCI (Prototype WIP)
+Built by and MD-turned-Dev, exploring low-cost BCI for XR.
 
 # Why?
 * Can be used in VR projects to help rehabilitation after orthopedic surgery or traumatic events.
