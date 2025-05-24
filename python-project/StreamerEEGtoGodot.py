@@ -15,7 +15,7 @@ import asyncio
 import json
 import time
 import mne
-import websockets # Note: Not a full server / just a client lib
+import websockets
 import numpy as np
 
 ###
