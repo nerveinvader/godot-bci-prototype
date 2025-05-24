@@ -19,6 +19,7 @@ const LERP_SPEED: float = 0.1 # speed of lerp function
 ## Variables
 var _ws: WebSocketPeer # client in GODOT
 @onready var _cube: MeshInstance3D = $Cube
+@onready var _label: Label = $CanvasLayer/Label
 
 var _latestAlpha: float = 0.0 # store latest value recieved from python script
 
@@ -51,7 +52,7 @@ func _pollWebSocket() -> void:
 		var result = JSON.parse_string(packet)
 		if typeof(result) == TYPE_DICTIONARY and result.has("alpha"):
 			_latestAlpha = float(result["alpha"])
-			print("alpha:", _latestAlpha)
+			_label.text = "alpha:" + str(_latestAlpha)
 
 ## Smoothly interpolate the cube Y-scale toward >
 ## SCALE_BASE + alpha * SCALE_MULTIPLIER

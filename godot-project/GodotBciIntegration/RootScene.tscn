@@ -1,8 +1,12 @@
-[gd_scene load_steps=3 format=3 uid="uid://bhp7segrnixc2"]
+[gd_scene load_steps=4 format=3 uid="uid://bhp7segrnixc2"]
 
 [ext_resource type="Script" uid="uid://b1mo5n3dvp88o" path="res://WebSocketVisualizer.gd" id="1_vw6t8"]
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vw6t8"]
+albedo_color = Color(0.12439, 0.743442, 0.814003, 1)
+
 [sub_resource type="BoxMesh" id="BoxMesh_03604"]
+material = SubResource("StandardMaterial3D_vw6t8")
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_vw6t8")
@@ -11,4 +15,15 @@ script = ExtResource("1_vw6t8")
 mesh = SubResource("BoxMesh_03604")
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 0.834165, 0.551515, 0, -0.551515, 0.834165, 0, 1.15806, 2.44096)
+transform = Transform3D(0.569279, -0.31064, 0.761199, 0, 0.925871, 0.377841, -0.822144, -0.215097, 0.527079, 2.64899, 1.90496, 2.0261)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 64.0
+offset_top = 64.0
+offset_right = 104.0
+offset_bottom = 87.0
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.706675, 0.707539, 0, -0.707539, 0.706675, 0, 9.38871, 12.3766)
