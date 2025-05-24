@@ -20,7 +20,7 @@
 3. Wait for the game to connect, and then see the changes in scale of the cube.
 
 # Demo:
-<img src="./godot_bci_mvp_demo.gif">
+<img src="./demo/30secDemo.gif">
 
 This demo project is publicly available under MIT license.
 
